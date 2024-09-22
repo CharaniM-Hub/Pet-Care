@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dogcat"
+    tools:context=".EditDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.71"
+            android:background="#1B1B1A"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Appointment"
+                android:textAlignment="center"
+                android:textColor="#FDFDFA"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.437"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.125" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/images00001" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="370dp"
+                android:layout_height="417dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#616060"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.359"
+                tools:ignore="MissingConstraints">
+
+
+                <EditText
+                    android:id="@+id/CGFullName"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:background="#05070B"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint=" Full Name"
+                    android:inputType="textPersonName"
+                    android:textColor="#FBFBFB"
+                    android:textColorHint="#9A9797"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.042"
+                    tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/CgSkills"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:background="#05070B"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint=" Experience/Skills"
+                    android:inputType="textPersonName"
+                    android:textColor="#FBFBFB"
+                    android:textColorHint="#9A9797"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.155"
+                    tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/OwnerName"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:background="#05070B"
+                    android:ems="10"
+                    android:hint=" Pet Owner Name"
+                    android:inputType="textPersonName"
+                    android:textColor="#FBFBFB"
+                    android:textColorHint="#9A9797"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.268"
+                    tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/PhoneNo"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:background="#05070B"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint=" Enter Phone No"
+                    android:inputType="textPersonName"
+                    android:textColor="#FBFBFB"
+                    android:textColorHint="#9A9797"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.379"
+                    tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/PetName"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:background="#05070B"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint=" Pet Name"
+                    android:inputType="textPersonName"
+                    android:textColor="#FBFBFB"
+                    android:textColorHint="#9A9797"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.498"
+                    tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/Age"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:background="#05070B"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint=" Pet Age"
+                    android:inputType="textPersonName"
+                    android:textColor="#FBFBFB"
+                    android:textColorHint="#9A9797"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.614"
+                    tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/SexType"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:background="#05070B"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint=" Sex Type"
+                    android:inputType="textPersonName"
+                    android:textColor="#FBFBFB"
+                    android:textColorHint="#9A9797"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.731"
+                    tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/Date"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:background="#05070B"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint=" Appointment Date"
+                    android:inputType="date"
+                    android:textColor="#FBFBFB"
+                    android:textColorHint="#9A9797"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.844"
+                    tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/Time"
+                    android:layout_width="350dp"
+                    android:layout_height="30dp"
+                    android:background="#05070B"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:hint=" Time"
+                    android:inputType="datetime"
+                    android:textColor="#FBFBFB"
+                    android:textColorHint="#9A9797"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.958"
+                    tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/BtnBook"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#C4C9E6"
+                android:text="Book"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/ButtonView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                app:layout_constraintVertical_bias="0.575"
+                tools:ignore="MissingConstraints,NotSibling,TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
